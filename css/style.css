@@ -13,11 +13,16 @@ main {
 }
 
 body {
+  padding: 0;
+  margin: 0;
   overflow-y: hidden;
+  overflow-x: hidden;
   background-image: url(../img/university.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
-.search {
+.order {
   position: relative;
   width: 500px;
   height: 40px;
@@ -34,7 +39,7 @@ body {
   margin: auto;
 }
 
-.search__input {
+.order__input {
   width: 100%;
   height: 100%;
   outline: none;
@@ -46,13 +51,22 @@ body {
   opacity: 0.5;
 }
 
-.search__input:focus {
+.order__input:focus {
   opacity: 0.9;
 }
 
-.search__btn {
+.order__btn {
   width: 200px;
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-clip-path: polygon(21% 0%, 100% 0%, 79% 100%, 0% 100%);
           clip-path: polygon(21% 0%, 100% 0%, 79% 100%, 0% 100%);
   top: 3px;
@@ -68,9 +82,32 @@ body {
   color: white;
 }
 
-.search__btn:hover {
+.order__btn:hover {
   top: 0;
   bottom: 0;
   right: 0;
+}
+
+@media (max-width: 768px) {
+  main {
+    width: auto;
+  }
+  .order {
+    width: 300px;
+    height: 30px;
+  }
+  .order__input {
+    -webkit-clip-path: none;
+            clip-path: none;
+    border: 1px solid white;
+    padding-left: 5px;
+    padding-right: 105px;
+  }
+  .order__btn {
+    width: 100px;
+    -webkit-clip-path: none;
+            clip-path: none;
+    right: 3px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

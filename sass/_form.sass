@@ -6,9 +6,14 @@ main
   margin: auto
   display: flex
 body
+  padding: 0
+  margin: 0
   overflow-y: hidden
+  overflow-x: hidden
   background-image: url(../img/university.jpg)
-.search
+  background-position: center
+  background-size: cover
+.order
   position: relative
   width: 500px
   height: 40px
@@ -30,6 +35,9 @@ body
   &__btn
     width: 200px
     position: absolute
+    display: flex
+    align-items: center
+    justify-content: center
     clip-path: polygon(21% 0%, 100% 0%, 79% 100%, 0% 100%)
     top: 3px
     right: 10px
