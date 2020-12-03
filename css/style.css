@@ -1,0 +1,76 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  width: 100vh;
+  height: 100vh;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body {
+  overflow-y: hidden;
+  background-image: url(../img/university.jpg);
+}
+
+.search {
+  position: relative;
+  width: 500px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+.search__input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  -webkit-clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+          clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+  padding-left: 50px;
+  padding-right: 200px;
+  opacity: 0.5;
+}
+
+.search__input:focus {
+  opacity: 0.9;
+}
+
+.search__btn {
+  width: 200px;
+  position: absolute;
+  -webkit-clip-path: polygon(21% 0%, 100% 0%, 79% 100%, 0% 100%);
+          clip-path: polygon(21% 0%, 100% 0%, 79% 100%, 0% 100%);
+  top: 3px;
+  right: 10px;
+  bottom: 3px;
+  border: none;
+  outline: none;
+  text-align: center;
+  padding: 12px 24px;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: red;
+  color: white;
+}
+
+.search__btn:hover {
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+/*# sourceMappingURL=style.css.map */
