@@ -1,4 +1,11 @@
 'use strict';
+import "@babel/polyfill";
+import 'nodelist-foreach-polyfill';
+import 'formdata-polyfill';
+import 'es6-promise';
+import 'clip-path';
+ClipPath('#clipped');
+
 const form = document.querySelector('.order'),
     phone = document.querySelectorAll('#phone'),
     btn = document.querySelector('.order__btn');
